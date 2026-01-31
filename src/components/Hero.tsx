@@ -193,8 +193,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              Vishnuvardhan{' '}
-              <span className="gradient-text">Komakula</span>
+              VISHNUVARDHAN{' '}
+              <span className="gradient-text">KOMAKULA</span>
             </motion.h1>
 
             <motion.div 
