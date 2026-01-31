@@ -2,7 +2,7 @@ import { ArrowDown, FileText, Mail, Briefcase, Github, Linkedin, Sparkles } from
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/profile-photo.png';
 
 const FloatingShape = ({ className, delay = 0 }: { className?: string; delay?: number }) => (
   <motion.div
