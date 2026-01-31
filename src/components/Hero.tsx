@@ -271,7 +271,7 @@ const Hero = () => {
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 </a>
                 <a 
-                  href="https://github.com/vishnuvardhan-komakula" 
+                  href="https://github.com/vishnuvardhan-0862"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-secondary/50 hover:bg-primary/20 hover:text-primary transition-all duration-300 group"
