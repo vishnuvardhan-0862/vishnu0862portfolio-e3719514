@@ -138,7 +138,7 @@ const Hero = () => {
               <img
                 src={profilePhoto}
                 alt="Vishnuvardhan Komakula"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
