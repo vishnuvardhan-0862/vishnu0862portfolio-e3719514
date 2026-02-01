@@ -27,7 +27,7 @@ const experiences = [
       'Credit Card Approval Prediction classifier',
       'Data preprocessing and visualization',
     ],
-    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Random Forest', 'Linear Regression', 'Data Visualization'],
   },
 ];
 
