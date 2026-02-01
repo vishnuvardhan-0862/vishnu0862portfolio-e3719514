@@ -23,7 +23,7 @@ const About = () => {
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2">Get to Know</p>
           <h2 className="section-heading">About <span className="gradient-text">Me</span></h2>
-          <p className="section-subheading mx-auto">
+          <p className="section-subheading mx-auto text-muted-foreground">
             A dedicated AI & ML enthusiast with a passion for innovation and continuous learning.
           </p>
         </div>
