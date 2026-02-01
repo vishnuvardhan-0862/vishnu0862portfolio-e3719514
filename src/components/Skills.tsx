@@ -14,7 +14,7 @@ const skillCategories = [
   {
     icon: Wrench,
     title: 'Tools & Technologies',
-    skills: ['Jupyter Notebook', 'Anaconda', 'VS Code', 'Python IDLE', 'SQLite', 'Streamlit', 'Git'],
+    skills: ['Jupyter Notebook', 'Anaconda', 'VS Code', 'Python IDLE', 'SQLite', 'Streamlit', 'Git', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'],
   },
   {
     icon: MessageSquare,
