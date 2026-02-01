@@ -8,7 +8,7 @@ const projects = [
     description:
       'Comprehensive predictive analysis on cyber-attack datasets spanning 2005–2017. Utilized advanced statistical techniques for breach prediction and risk assessment.',
     tech: ['Python', 'Django', 'MySQL', 'HTML/CSS/JS', 'ARMA-GARCH', 'Copula Analysis'],
-    highlights: ['Time-series analysis', 'Risk modeling', 'Full-stack implementation'],
+    highlights: ['Time-series analysis', 'Statistical modeling', 'Full-stack development'],
     featured: true,
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description:
       'Deep learning-based stress classification system using Heart Rate Variability data. Achieved exceptional accuracy through optimized 1D CNN architecture.',
     tech: ['Python', 'TensorFlow', '1D CNN', 'SWELL-KW Dataset'],
-    highlights: ['99.9% accuracy', 'Feature optimization', 'Deep learning'],
+    highlights: ['99.9% accuracy', 'Deep learning', 'Healthcare AI'],
     featured: true,
   },
   {
