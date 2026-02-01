@@ -85,6 +85,11 @@ const Projects = () => {
                     <project.icon className="w-7 h-7 text-primary" />
                   </div>
                   <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-2 py-1 rounded">
+                        Featured Project
+                      </span>
+                    </div>
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((h) => (
