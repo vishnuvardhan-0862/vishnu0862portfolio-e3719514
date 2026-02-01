@@ -65,7 +65,7 @@ const Education = () => {
                       'Machine Learning',
                       'Deep Learning',
                       'Data Structures & Algorithms',
-                      'Algorithms',
+                      'AI',
                       'Database Systems',
                       'Computer Networks',
                       'Python Programming',
