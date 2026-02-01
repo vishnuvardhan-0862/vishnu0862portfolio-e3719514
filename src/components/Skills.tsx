@@ -65,8 +65,9 @@ const Skills = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <h3 className="text-xl font-semibold text-center mb-8">Proficiency Overview</h3>
           <div className="grid gap-6">
-            {[
+          {[
               { name: 'Python', level: 90 },
+              { name: 'Artificial Intelligence', level: 85 },
               { name: 'Machine Learning', level: 85 },
               { name: 'Data Science', level: 85 },
               { name: 'SQL', level: 80 },
