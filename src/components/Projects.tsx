@@ -29,7 +29,7 @@ const projects = [
       'Machine learning model to predict movie ratings using regression and ensemble methods. Analyzed various features affecting audience ratings.',
     tech: ['Python', 'Scikit-learn', 'Pandas', 'Random Forest'],
     highlights: ['Regression modeling', 'Feature engineering'],
-    github: 'https://github.com/vishnuvardhan-0862/Movie-Rating-Prediction',
+    github: 'https://github.com/vishnuvardhan-0862/CODESOFT/blob/main/Movie%20Rating%20Prediction.ipynb',
     featured: false,
   },
   {
@@ -39,7 +39,7 @@ const projects = [
       'Classification model to predict credit card approval outcomes based on applicant data. Implemented robust data preprocessing pipeline.',
     tech: ['Python', 'Scikit-learn', 'Classification'],
     highlights: ['Binary classification', 'Data preprocessing'],
-    github: 'https://github.com/vishnuvardhan-0862/Credit-Card-Approval-Prediction',
+    github: 'https://github.com/vishnuvardhan-0862/CODESOFT/blob/main/Creditcard%20prediction.ipynb',
     featured: false,
   },
   {
@@ -49,7 +49,7 @@ const projects = [
       'Regression-based price estimation model deployed as an interactive web application. Users can input car features to get instant price predictions.',
     tech: ['Python', 'Streamlit', 'Regression', 'ML Deployment'],
     highlights: ['Interactive UI', 'Model deployment'],
-    github: 'https://github.com/vishnuvardhan-0862/Car-Price-Prediction',
+    github: 'https://github.com/vishnuvardhan-0862/InternPE',
     featured: false,
   },
   {
