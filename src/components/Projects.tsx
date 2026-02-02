@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Shield, Heart, Film, CreditCard, Car, Trophy } from 'lucide-react';
+import { ExternalLink, Github, Shield, Heart, Film, CreditCard, Car, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const projects = [
@@ -53,13 +53,13 @@ const projects = [
     featured: false,
   },
   {
-    icon: Trophy,
-    title: 'IPL Winner Prediction',
+    icon: Heart,
+    title: 'Diabetes Prediction with ML',
     description:
-      'Machine learning model to predict IPL match outcomes using historical data analysis. Considered team statistics, venue, and player performance.',
-    tech: ['Python', 'ML Algorithms', 'Historical Data Analysis'],
-    highlights: ['Sports analytics', 'Predictive modeling'],
-    github: 'https://github.com/vishnuvardhan-0862/IPL-Winner-Prediction',
+      'Machine learning model to predict diabetes using patient health metrics. Implemented classification algorithms to identify individuals at risk of diabetes.',
+    tech: ['Python', 'Scikit-learn', 'Classification', 'Healthcare ML'],
+    highlights: ['Healthcare AI', 'Predictive modeling'],
+    github: 'https://github.com/vishnuvardhan-0862/InternPE/blob/main/Make%20a%20Diabetes%20prediction%20with%20ML.ipynb',
     featured: false,
   },
 ];
