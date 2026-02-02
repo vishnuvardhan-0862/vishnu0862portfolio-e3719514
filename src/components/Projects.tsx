@@ -29,6 +29,7 @@ const projects = [
       'Machine learning model to predict movie ratings using regression and ensemble methods. Analyzed various features affecting audience ratings.',
     tech: ['Python', 'Scikit-learn', 'Pandas', 'Random Forest'],
     highlights: ['Regression modeling', 'Feature engineering'],
+    github: 'https://github.com/vishnuvardhan-0862/Movie-Rating-Prediction',
     featured: false,
   },
   {
@@ -38,6 +39,7 @@ const projects = [
       'Classification model to predict credit card approval outcomes based on applicant data. Implemented robust data preprocessing pipeline.',
     tech: ['Python', 'Scikit-learn', 'Classification'],
     highlights: ['Binary classification', 'Data preprocessing'],
+    github: 'https://github.com/vishnuvardhan-0862/Credit-Card-Approval-Prediction',
     featured: false,
   },
   {
@@ -47,6 +49,7 @@ const projects = [
       'Regression-based price estimation model deployed as an interactive web application. Users can input car features to get instant price predictions.',
     tech: ['Python', 'Streamlit', 'Regression', 'ML Deployment'],
     highlights: ['Interactive UI', 'Model deployment'],
+    github: 'https://github.com/vishnuvardhan-0862/Car-Price-Prediction',
     featured: false,
   },
   {
@@ -56,6 +59,7 @@ const projects = [
       'Machine learning model to predict IPL match outcomes using historical data analysis. Considered team statistics, venue, and player performance.',
     tech: ['Python', 'ML Algorithms', 'Historical Data Analysis'],
     highlights: ['Sports analytics', 'Predictive modeling'],
+    github: 'https://github.com/vishnuvardhan-0862/IPL-Winner-Prediction',
     featured: false,
   },
 ];
@@ -148,13 +152,22 @@ const Projects = () => {
                 </div>
                 <h3 className="font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1 mb-4">
                   {project.tech.slice(0, 3).map((tech) => (
                     <span key={tech} className="text-xs px-2 py-0.5 rounded bg-secondary text-muted-foreground">
                       {tech}
                     </span>
                   ))}
                 </div>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
+                >
+                  <Github className="w-4 h-4" />
+                  View Code
+                </a>
               </div>
             ))}
         </div>
