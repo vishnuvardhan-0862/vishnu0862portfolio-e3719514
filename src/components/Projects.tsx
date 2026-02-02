@@ -9,6 +9,7 @@ const projects = [
       'Comprehensive predictive analysis on cyber-attack datasets spanning 2005–2017. Utilized advanced statistical techniques for breach prediction and risk assessment.',
     tech: ['Python', 'Django', 'MySQL', 'HTML/CSS/JS', 'ARMA-GARCH', 'Copula Analysis'],
     highlights: ['Time-series analysis', 'Statistical modeling', 'Full-stack development'],
+    github: 'https://github.com/yourusername/cyber-hacking-breaches',
     featured: true,
   },
   {
@@ -18,6 +19,7 @@ const projects = [
       'Deep learning-based stress classification system using Heart Rate Variability data. Achieved exceptional accuracy through optimized 1D CNN architecture.',
     tech: ['Python', 'TensorFlow', '1D CNN', 'SWELL-KW Dataset'],
     highlights: ['99.9% accuracy', 'Deep learning', 'Healthcare AI'],
+    github: 'https://github.com/yourusername/stress-detection-hrv',
     featured: true,
   },
   {
@@ -112,9 +114,16 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary/50 hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </a>
                   </Button>
                   <Button variant="ghost" size="sm" className="hover:bg-muted">
                     <ExternalLink className="w-4 h-4 mr-2" />
