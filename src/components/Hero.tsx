@@ -250,7 +250,7 @@ const Hero = () => {
                 </a>
               </Button>
               <Button asChild variant="ghost" size="lg" className="hover:bg-muted group">
-                <a href="#" onClick={e => e.preventDefault()}>
+                <a href="/VISHNU_Resume.pdf" download="Vishnuvardhan_Komakula_Resume.pdf">
                   <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                   Resume
                 </a>
