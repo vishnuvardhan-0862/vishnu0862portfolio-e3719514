@@ -39,7 +39,7 @@ const certifications = [
   {
     icon: Bot,
     title: 'Generative AI & AI Agents Workshop',
-    issuer: 'Various',
+    issuer: '10000 Coders',
     type: 'Workshop',
     link: 'https://drive.google.com/file/d/1oehKX_s3BzCdeENzkWb-4ovggfLN08dg/view?usp=drive_link',
   },
