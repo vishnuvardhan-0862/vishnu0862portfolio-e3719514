@@ -69,11 +69,11 @@ const Contact = () => {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
+          form_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_name: 'Vishnuvardhan',
-          sent_time: sentTime,
+          Sent_time: sentTime,
         },
         EMAILJS_PUBLIC_KEY
       );
