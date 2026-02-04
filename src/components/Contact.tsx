@@ -59,6 +59,12 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      const sentTime = new Date().toLocaleString('en-IN', {
+        timeZone: 'Asia/Kolkata',
+        dateStyle: 'full',
+        timeStyle: 'short',
+      });
+
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
@@ -67,6 +73,7 @@ const Contact = () => {
           from_email: formData.email,
           message: formData.message,
           to_name: 'Vishnuvardhan',
+          sent_time: sentTime,
         },
         EMAILJS_PUBLIC_KEY
       );
