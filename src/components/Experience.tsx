@@ -44,68 +44,61 @@ const Experience = () => {
           </p>
         </div>
 
-        {/* Timeline */}
-        <div className="max-w-4xl mx-auto relative">
+        {/* Vertical Timeline */}
+        <div className="max-w-3xl mx-auto relative">
           {/* Timeline Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-border hidden md:block" />
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
 
           {experiences.map((exp, index) => (
             <div
               key={exp.title + exp.company}
-              className={`relative flex flex-col md:flex-row gap-8 mb-12 last:mb-0 ${
-                index % 2 === 0 ? 'md:flex-row-reverse' : ''
-              }`}
+              className="relative pl-16 mb-8 last:mb-0"
             >
               {/* Timeline Dot */}
-              <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 -translate-x-1/2 bg-primary rounded-full ring-4 ring-background" />
+              <div className="absolute left-4 top-8 w-5 h-5 -translate-x-1/2 bg-primary rounded-full ring-4 ring-background" />
 
               {/* Content */}
-              <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12'}`}>
-                <div className="glass-card p-8 hover:border-primary/50 transition-all duration-300">
-                  {/* Header */}
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Briefcase className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">{exp.title}</h3>
-                      <div className="flex items-center gap-2 text-muted-foreground mt-1">
-                        <Building className="w-4 h-4" />
-                        <span>{exp.company}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-primary mt-1">
-                        <Calendar className="w-4 h-4" />
-                        <span>{exp.duration}</span>
-                      </div>
-                    </div>
+              <div className="glass-card p-8 hover:border-primary/50 transition-all duration-300">
+                {/* Header */}
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Briefcase className="w-6 h-6 text-primary" />
                   </div>
-
-                  {/* Description */}
-                  <p className="text-muted-foreground mb-4">{exp.description}</p>
-
-                  {/* Highlights */}
-                  <ul className="space-y-2 mb-4">
-                    {exp.highlights.map((highlight) => (
-                      <li key={highlight} className="flex items-start gap-2 text-sm">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        <span className="text-muted-foreground">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
-                    {exp.tech.map((tech) => (
-                      <span key={tech} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary">
-                        {tech}
-                      </span>
-                    ))}
+                  <div>
+                    <h3 className="text-xl font-bold">{exp.title}</h3>
+                    <div className="flex items-center gap-2 text-muted-foreground mt-1">
+                      <Building className="w-4 h-4" />
+                      <span>{exp.company}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-primary mt-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{exp.duration}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Spacer for alternating layout */}
-              <div className="hidden md:block md:w-1/2" />
+                {/* Description */}
+                <p className="text-muted-foreground mb-4">{exp.description}</p>
+
+                {/* Highlights */}
+                <ul className="space-y-2 mb-4">
+                  {exp.highlights.map((highlight) => (
+                    <li key={highlight} className="flex items-start gap-2 text-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-muted-foreground">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2">
+                  {exp.tech.map((tech) => (
+                    <span key={tech} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
