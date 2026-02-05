@@ -79,7 +79,21 @@
   }
 
   .glass-card {
-    @apply bg-card backdrop-blur-sm border border-border rounded-xl shadow-lg;
+    @apply bg-card backdrop-blur-sm border border-border rounded-xl shadow-lg transition-all duration-300 ease-out;
+  }
+
+  .glass-card:hover {
+    @apply shadow-xl border-primary/20;
+    transform: translateY(-4px);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply shadow-xl;
+    transform: translateY(-6px) scale(1.01);
   }
 
   .glow-button {
