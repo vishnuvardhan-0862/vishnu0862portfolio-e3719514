@@ -13,22 +13,34 @@ const navLinks = [
 ];
 
 const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const scrollY = window.scrollY;
+      // Calculate blur intensity based on scroll (0-100px range)
+      const progress = Math.min(scrollY / 100, 1);
+      setScrollProgress(progress);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navStyle = {
+    backgroundColor: `hsl(var(--background) / ${0.6 + scrollProgress * 0.35})`,
+    backdropFilter: `blur(${scrollProgress * 20}px)`,
+    boxShadow: scrollProgress > 0.1 
+      ? `0 4px 30px hsl(var(--foreground) / ${scrollProgress * 0.05})` 
+      : 'none',
+  };
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-xl border-b border-border/50' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+        scrollProgress > 0.1 ? 'border-b border-border/50' : 'border-b border-transparent'
       }`}
+      style={navStyle}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
