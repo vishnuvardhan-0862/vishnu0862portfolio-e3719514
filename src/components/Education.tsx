@@ -1,8 +1,6 @@
 import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
-
 const Education = () => {
-  return (
-    <section id="education" className="py-12 lg:py-20 relative bg-secondary/30">
+  return <section id="education" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -53,7 +51,7 @@ const Education = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Award className="w-4 h-4 text-primary" />
-                    <span className="font-semibold text-foreground">CGPA: 8.8</span>
+                    <span className="font-semibold text-foreground">CGPA: 8.83</span>
                   </div>
                 </div>
 
@@ -61,20 +59,9 @@ const Education = () => {
                 <div className="pt-4 border-t border-border/50">
                   <h4 className="font-medium mb-3">Key Coursework</h4>
                   <div className="flex flex-wrap gap-2">
-                    {[
-                      'Machine Learning',
-                      'Deep Learning',
-                      'Data Structures & Algorithms',
-                      'AI',
-                      'Database Systems',
-                      'Computer Networks',
-                      'Python Programming',
-                      'Statistics',
-                    ].map((course) => (
-                      <span key={course} className="skill-tag text-xs">
+                    {['Machine Learning', 'Deep Learning', 'Data Structures & Algorithms', 'AI', 'Database Systems', 'Computer Networks', 'Python Programming', 'Statistics'].map(course => <span key={course} className="skill-tag text-xs">
                         {course}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
               </div>
@@ -82,8 +69,6 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Education;
