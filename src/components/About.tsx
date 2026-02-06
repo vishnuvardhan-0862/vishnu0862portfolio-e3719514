@@ -1,5 +1,4 @@
 import { Brain, Target, Users, Zap } from 'lucide-react';
-import profilePhoto from '@/assets/profile-photo.png';
 
 const highlights = [{
   icon: Brain,
@@ -31,24 +30,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12 items-start">
-          {/* Profile Photo */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-4 border-border shadow-xl">
-                <img 
-                  src={profilePhoto} 
-                  alt="Profile Photo" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/30 -z-10"></div>
-            </div>
-          </div>
-
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* About Text */}
-          <div className="space-y-6 lg:col-span-1">
+          <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">I am a final-year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning at Malla Reddy Institute of Engineering and Technology, Hyderabad.
 
 With a CGPA of 8.83, I have built a strong foundation in Python, Object-Oriented Programming, Data Science, SQL, Basic DSA with python and core AI/ML concepts. Enable me to transform complex data into actionable insights.</p>
@@ -63,15 +47,15 @@ I'm actively seeking opportunities to contribute to innovative AI solutions and 
           </div>
 
           {/* Highlights Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {highlights.map((item, index) => <div key={item.title} className="glass-card p-5 hover:border-primary/50 transition-all duration-300 group" style={{
+          <div className="grid sm:grid-cols-2 gap-6">
+            {highlights.map((item, index) => <div key={item.title} className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group" style={{
             animationDelay: `${index * 0.1}s`
           }}>
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-5 h-5 text-primary" />
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-sm mb-1">{item.title}</h3>
-                <p className="text-xs text-muted-foreground">{item.description}</p>
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>)}
           </div>
         </div>
