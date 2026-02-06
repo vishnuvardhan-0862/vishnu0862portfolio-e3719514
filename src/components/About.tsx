@@ -19,10 +19,10 @@ const highlights = [{
 }];
 
 const About = () => {
-  return <section id="about" className="py-20 lg:py-32 relative">
+  return <section id="about" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-primary font-medium mb-2">Get to Know</p>
           <h2 className="section-heading">About <span className="gradient-text">Me</span></h2>
           <p className="section-subheading mx-auto text-muted-foreground">
@@ -32,18 +32,16 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* About Text */}
-          <div className="space-y-6">
-            <p className="text-muted-foreground leading-relaxed">I am a final-year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning at Malla Reddy Institute of Engineering and Technology, Hyderabad.
-
-With a CGPA of 8.83, I have built a strong foundation in Python, Object-Oriented Programming, Data Science, SQL, Basic DSA with python and core AI/ML concepts. Enable me to transform complex data into actionable insights.</p>
+          <div className="space-y-5">
+            <p className="text-muted-foreground leading-relaxed">I am a final-year <span className="text-foreground font-medium">B.Tech Computer Science</span> student specializing in <span className="text-primary font-medium">Artificial Intelligence and Machine Learning</span> at Malla Reddy Institute of Engineering and Technology, Hyderabad.</p>
+            
+            <p className="text-muted-foreground leading-relaxed">With a <span className="text-primary font-medium">CGPA of 8.83</span>, I have built a strong foundation in <span className="text-foreground font-medium">Python, Object-Oriented Programming, Data Science, SQL, Basic DSA</span> and core AI/ML concepts — enabling me to transform complex data into actionable insights.</p>
+            
             <p className="text-muted-foreground leading-relaxed">
-              My internship experiences at CodSoft and InternPE have given me practical exposure to 
-              real-world data science and machine learning projects. I've worked on predictive modeling, 
-              data preprocessing, and building interactive applications using modern frameworks.
+              My internship experiences at <span className="text-foreground font-medium">CodSoft</span> and <span className="text-foreground font-medium">InternPE</span> have given me practical exposure to real-world data science and machine learning projects including <span className="text-foreground font-medium">predictive modeling</span> and <span className="text-foreground font-medium">data preprocessing</span>.
             </p>
-            <p className="text-muted-foreground leading-relaxed">I believe in disciplined execution, continuous learning, and the power of teamwork. I'm eager to contribute to impactful AI-driven projects and grow alongside industry professionals while solving challenging real-world problems.
-
-I'm actively seeking opportunities to contribute to innovative AI solutions and grow as a professional in the industry.</p>
+            
+            <p className="text-muted-foreground leading-relaxed">I believe in <span className="text-foreground font-medium">disciplined execution</span>, <span className="text-foreground font-medium">continuous learning</span>, and the power of <span className="text-foreground font-medium">teamwork</span>. I'm actively seeking opportunities to contribute to innovative AI solutions and grow as a professional.</p>
           </div>
 
           {/* Highlights Grid */}

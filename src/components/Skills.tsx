@@ -25,10 +25,10 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 lg:py-32 relative">
+    <section id="skills" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-primary font-medium mb-2">Technical Expertise</p>
           <h2 className="section-heading">My <span className="gradient-text">Skills</span></h2>
           <p className="section-subheading mx-auto">
@@ -62,8 +62,8 @@ const Skills = () => {
         </div>
 
         {/* Additional Visual - Skill Progress */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <h3 className="text-xl font-semibold text-center mb-8">Proficiency Overview</h3>
+        <div className="mt-12 max-w-4xl mx-auto">
+          <h3 className="text-xl font-semibold text-center mb-6">Proficiency Overview</h3>
           <div className="grid gap-6">
           {[
               { name: 'Python', level: 90 },

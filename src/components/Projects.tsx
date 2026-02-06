@@ -66,10 +66,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 lg:py-32 relative">
+    <section id="projects" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-primary font-medium mb-2">Featured Work</p>
           <h2 className="section-heading">My <span className="gradient-text">Projects</span></h2>
           <p className="section-subheading mx-auto">
