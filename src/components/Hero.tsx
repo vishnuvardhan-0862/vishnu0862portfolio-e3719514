@@ -110,13 +110,12 @@ const Hero = () => {
           duration: 0.8,
           ease: "easeOut"
         }}>
-            {/* Outer glow ring */}
-            <div className="absolute -inset-6 bg-gradient-to-r from-primary/50 via-accent/30 to-primary/50 rounded-full blur-xl opacity-60 animate-pulse-slow" />
+            {/* Outer glow ring - reduced blur for clarity */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 rounded-full blur-md opacity-50 animate-pulse-slow" />
             
-            {/* Main image container */}
+            {/* Main image container - no overlay for maximum clarity */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/50 shadow-2xl">
               <img src={profilePhoto} alt="Vishnuvardhan Komakula" className="w-full h-full object-cover object-top" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
             
             {/* Animated decorative rings */}
