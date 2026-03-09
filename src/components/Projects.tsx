@@ -12,7 +12,7 @@ const projects = [
     tech: ['Python', 'Django', 'MySQL', 'HTML/CSS/JS', 'ARMA-GARCH', 'Copula Analysis'],
     highlights: ['Time-series analysis', 'Statistical modeling', 'Full-stack development'],
     github: 'https://github.com/vishnuvardhan-0862/Modeling-and-Predicting-Cyber-Hacking-Breaches',
-    image: null,
+    image: cyberProjectImg,
     featured: true,
   },
   {
