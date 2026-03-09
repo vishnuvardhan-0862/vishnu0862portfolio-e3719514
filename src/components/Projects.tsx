@@ -90,19 +90,34 @@ const Projects = () => {
                 className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
               >
                 {project.image && (
-                  <div className="mb-6 perspective-[1200px]">
-                    <div className="relative rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:rotate-y-2 group-hover:scale-[1.02]"
+                  <div className="mb-6" style={{ perspective: '1200px' }}>
+                    <div
+                      className="relative rounded-xl overflow-hidden transition-all duration-700 ease-out"
                       style={{
-                        transform: 'perspective(1200px) rotateY(-3deg) rotateX(2deg)',
+                        transform: 'rotateY(-3deg) rotateX(2deg)',
                         boxShadow: '0 25px 50px -12px hsl(var(--primary) / 0.25), 0 0 30px hsl(var(--primary) / 0.1)',
+                        transformStyle: 'preserve-3d',
+                      }}
+                      onMouseMove={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        const x = (e.clientX - rect.left) / rect.width - 0.5;
+                        const y = (e.clientY - rect.top) / rect.height - 0.5;
+                        e.currentTarget.style.transform = `rotateY(${x * 15}deg) rotateX(${-y * 15}deg) scale(1.03)`;
+                        e.currentTarget.style.boxShadow = `${-x * 30}px ${y * 30}px 60px -12px hsl(var(--primary) / 0.35), 0 0 40px hsl(var(--primary) / 0.15)`;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'rotateY(-3deg) rotateX(2deg)';
+                        e.currentTarget.style.boxShadow = '0 25px 50px -12px hsl(var(--primary) / 0.25), 0 0 30px hsl(var(--primary) / 0.1)';
                       }}
                     >
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-48 object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-56 object-cover object-top"
+                        style={{ imageRendering: 'auto', filter: 'contrast(1.05) saturate(1.1) sharpen(1)' }}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500" />
+                      <div className="absolute inset-0 border border-primary/10 rounded-xl" />
                     </div>
                   </div>
                 )}
