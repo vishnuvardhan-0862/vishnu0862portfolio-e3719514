@@ -87,8 +87,26 @@ const Projects = () => {
             .map((project) => (
               <div
                 key={project.title}
-                className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group"
+                className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
               >
+                {project.image && (
+                  <div className="mb-6 perspective-[1200px]">
+                    <div className="relative rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:rotate-y-2 group-hover:scale-[1.02]"
+                      style={{
+                        transform: 'perspective(1200px) rotateY(-3deg) rotateX(2deg)',
+                        boxShadow: '0 25px 50px -12px hsl(var(--primary) / 0.25), 0 0 30px hsl(var(--primary) / 0.1)',
+                      }}
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-48 object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+                    </div>
+                  </div>
+                )}
+
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <project.icon className="w-7 h-7 text-primary" />
