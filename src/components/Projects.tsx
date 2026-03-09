@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Shield, Heart, Film, CreditCard, Car, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import hrvProjectImg from '@/assets/hrv-project.png';
+import cyberProjectImg from '@/assets/cyber-project.png';
 
 const projects = [
   {
