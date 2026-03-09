@@ -24,7 +24,6 @@ const projects = [
     github: 'https://github.com/vishnuvardhan-0862/Multi-Class-Stress-Detection-Through-HRV',
     image: hrvProjectImg,
     featured: true,
-    featured: true,
   },
   {
     icon: Film,
