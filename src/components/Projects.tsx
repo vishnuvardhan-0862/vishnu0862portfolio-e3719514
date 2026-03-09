@@ -11,6 +11,7 @@ const projects = [
     tech: ['Python', 'Django', 'MySQL', 'HTML/CSS/JS', 'ARMA-GARCH', 'Copula Analysis'],
     highlights: ['Time-series analysis', 'Statistical modeling', 'Full-stack development'],
     github: 'https://github.com/vishnuvardhan-0862/Modeling-and-Predicting-Cyber-Hacking-Breaches',
+    image: null,
     featured: true,
   },
   {
@@ -21,6 +22,8 @@ const projects = [
     tech: ['Python', 'TensorFlow', '1D CNN', 'SWELL-KW Dataset'],
     highlights: ['99.9% accuracy', 'Deep learning', 'Healthcare AI'],
     github: 'https://github.com/vishnuvardhan-0862/Multi-Class-Stress-Detection-Through-HRV',
+    image: hrvProjectImg,
+    featured: true,
     featured: true,
   },
   {
