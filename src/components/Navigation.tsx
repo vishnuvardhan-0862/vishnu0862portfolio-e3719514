@@ -107,7 +107,15 @@ const Navigation = () => {
                 >
                   {link.name}
                 </a>
-              ))}
+               ))}
+              <div className="flex items-center gap-3 pt-2">
+                <a href="https://linkedin.com/in/vishnuvardhan-komakula" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300">
+                  <Linkedin size={18} />
+                </a>
+                <a href="https://github.com/vishnuvardhan-0862" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300">
+                  <Github size={18} />
+                </a>
+              </div>
             </div>
           </div>
         )}
