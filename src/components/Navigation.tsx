@@ -59,6 +59,16 @@ const Navigation = () => {
             ))}
           </div>
 
+          <div className="hidden md:flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300"
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+          </div>
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-foreground"
