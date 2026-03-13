@@ -1,4 +1,5 @@
 import { Brain, Target, Users, Zap } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const highlights = [{
   icon: Brain,
