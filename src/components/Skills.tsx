@@ -1,4 +1,5 @@
 import { Code, Database, Wrench, MessageSquare } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const skillCategories = [
   {
