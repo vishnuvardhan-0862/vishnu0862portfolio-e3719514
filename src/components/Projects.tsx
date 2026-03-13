@@ -89,8 +89,8 @@ const Projects = () => {
           {projects
             .filter((p) => p.featured)
             .map((project) => (
+              <ScrollReveal key={project.title} delay={0.1}>
               <div
-                key={project.title}
                 className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
               >
                 {project.image && (
