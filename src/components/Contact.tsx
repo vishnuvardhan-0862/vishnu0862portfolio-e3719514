@@ -37,12 +37,12 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/vishnuvardhan-komakula',
   },
   {
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/vishnuvardhan-0862',
   },
 ];
 
