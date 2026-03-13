@@ -47,7 +47,9 @@ const About = () => {
             
             <p className="text-muted-foreground leading-relaxed">I believe in <span className="text-foreground font-medium">disciplined execution</span>, <span className="text-foreground font-medium">continuous learning</span>, and the power of <span className="text-foreground font-medium">teamwork</span>. I'm actively seeking opportunities to contribute to innovative AI solutions and grow as a professional.</p>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="right" delay={0.2}>
           {/* Highlights Grid */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, index) => <div key={item.title} className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group" style={{
