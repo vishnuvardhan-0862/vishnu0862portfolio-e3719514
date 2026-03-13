@@ -62,6 +62,7 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>)}
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>;

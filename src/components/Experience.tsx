@@ -103,6 +103,7 @@ const Experience = () => {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

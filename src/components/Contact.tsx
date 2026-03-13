@@ -234,6 +234,7 @@ const Contact = () => {
               </Button>
             </form>
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

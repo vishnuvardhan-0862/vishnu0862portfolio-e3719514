@@ -72,6 +72,7 @@ const Education = () => {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>;
 };

@@ -88,6 +88,7 @@ const Certifications = () => {
                 </a>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
 

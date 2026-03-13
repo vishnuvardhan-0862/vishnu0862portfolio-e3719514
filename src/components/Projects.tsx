@@ -210,6 +210,7 @@ const Projects = () => {
                   View Code
                 </a>
               </div>
+              </ScrollReveal>
             ))}
         </div>
       </div>
