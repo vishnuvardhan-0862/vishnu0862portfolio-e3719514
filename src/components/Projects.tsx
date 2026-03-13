@@ -74,13 +74,15 @@ const Projects = () => {
     <section id="projects" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Featured Work</p>
-          <h2 className="section-heading">My <span className="gradient-text">Projects</span></h2>
-          <p className="section-subheading mx-auto">
-            A showcase of AI/ML projects demonstrating practical problem-solving skills.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Featured Work</p>
+            <h2 className="section-heading">My <span className="gradient-text">Projects</span></h2>
+            <p className="section-subheading mx-auto">
+              A showcase of AI/ML projects demonstrating practical problem-solving skills.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
