@@ -4,13 +4,15 @@ const Education = () => {
   return <section id="education" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Academic Background</p>
-          <h2 className="section-heading">My <span className="gradient-text">Education</span></h2>
-          <p className="section-subheading mx-auto">
-            Building a strong foundation in computer science with specialization in AI & ML.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Academic Background</p>
+            <h2 className="section-heading">My <span className="gradient-text">Education</span></h2>
+            <p className="section-subheading mx-auto">
+              Building a strong foundation in computer science with specialization in AI & ML.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Education Card */}
         <div className="max-w-4xl mx-auto">
