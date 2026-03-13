@@ -37,13 +37,15 @@ const Experience = () => {
     <section id="experience" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Professional Journey</p>
-          <h2 className="section-heading">Work <span className="gradient-text">Experience</span></h2>
-          <p className="section-subheading mx-auto">
-            Hands-on internship experience in Data Science and Machine Learning.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Professional Journey</p>
+            <h2 className="section-heading">Work <span className="gradient-text">Experience</span></h2>
+            <p className="section-subheading mx-auto">
+              Hands-on internship experience in Data Science and Machine Learning.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Vertical Timeline */}
         <div className="max-w-3xl mx-auto relative">
