@@ -1,4 +1,5 @@
 import { Briefcase, Calendar, Building } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const experiences = [
   {
@@ -36,13 +37,15 @@ const Experience = () => {
     <section id="experience" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Professional Journey</p>
-          <h2 className="section-heading">Work <span className="gradient-text">Experience</span></h2>
-          <p className="section-subheading mx-auto">
-            Hands-on internship experience in Data Science and Machine Learning.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Professional Journey</p>
+            <h2 className="section-heading">Work <span className="gradient-text">Experience</span></h2>
+            <p className="section-subheading mx-auto">
+              Hands-on internship experience in Data Science and Machine Learning.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Vertical Timeline */}
         <div className="max-w-3xl mx-auto relative">
@@ -50,8 +53,8 @@ const Experience = () => {
           <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
 
           {experiences.map((exp, index) => (
+            <ScrollReveal key={exp.title + exp.company} delay={index * 0.15}>
             <div
-              key={exp.title + exp.company}
               className="relative pl-16 mb-8 last:mb-0"
             >
               {/* Timeline Dot */}
@@ -100,6 +103,7 @@ const Experience = () => {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

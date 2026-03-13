@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ScrollReveal from './ScrollReveal';
 import { Mail, Phone, MapPin, Linkedin, Github, Send, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -100,15 +101,18 @@ const Contact = () => {
     <section id="contact" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Get In Touch</p>
-          <h2 className="section-heading">Contact <span className="gradient-text">Me</span></h2>
-          <p className="section-subheading mx-auto">
-            Have a project in mind or want to connect? Feel free to reach out!
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Get In Touch</p>
+            <h2 className="section-heading">Contact <span className="gradient-text">Me</span></h2>
+            <p className="section-subheading mx-auto">
+              Have a project in mind or want to connect? Feel free to reach out!
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <ScrollReveal direction="left" delay={0.1}>
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-6">
@@ -161,7 +165,9 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="right" delay={0.2}>
           {/* Contact Form */}
           <div className="glass-card p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -228,6 +234,7 @@ const Contact = () => {
               </Button>
             </form>
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Award, BookOpen, Cpu, Globe, Shield, Users, Bot, ExternalLink } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const certifications = [
   {
@@ -50,19 +51,21 @@ const Certifications = () => {
     <section id="certifications" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Continuous Learning</p>
-          <h2 className="section-heading">Certifications & <span className="gradient-text">Workshops</span></h2>
-          <p className="section-subheading mx-auto">
-            Credentials and learning experiences that demonstrate commitment to growth.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Continuous Learning</p>
+            <h2 className="section-heading">Certifications & <span className="gradient-text">Workshops</span></h2>
+            <p className="section-subheading mx-auto">
+              Credentials and learning experiences that demonstrate commitment to growth.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Certifications Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {certifications.map((cert, index) => (
+            <ScrollReveal key={cert.title} delay={index * 0.08}>
             <div
-              key={cert.title}
               className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group flex items-start gap-4"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -85,6 +88,7 @@ const Certifications = () => {
                 </a>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
 

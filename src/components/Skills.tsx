@@ -1,4 +1,5 @@
 import { Code, Database, Wrench, MessageSquare } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const skillCategories = [
   {
@@ -28,19 +29,21 @@ const Skills = () => {
     <section id="skills" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Technical Expertise</p>
-          <h2 className="section-heading">My <span className="gradient-text">Skills</span></h2>
-          <p className="section-subheading mx-auto">
-            A comprehensive toolkit for building intelligent systems and data-driven solutions.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Technical Expertise</p>
+            <h2 className="section-heading">My <span className="gradient-text">Skills</span></h2>
+            <p className="section-subheading mx-auto">
+              A comprehensive toolkit for building intelligent systems and data-driven solutions.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
+            <ScrollReveal key={category.title} delay={index * 0.1}>
             <div
-              key={category.title}
               className="glass-card p-8 hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
@@ -58,10 +61,12 @@ const Skills = () => {
                 ))}
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Additional Visual - Skill Progress */}
+        <ScrollReveal delay={0.3}>
         <div className="mt-12 max-w-4xl mx-auto">
           <h3 className="text-xl font-semibold text-center mb-6">Proficiency Overview</h3>
           <div className="grid gap-6">
@@ -88,6 +93,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { ExternalLink, Github, Shield, Heart, Film, CreditCard, Car, Activity } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 import { Button } from '@/components/ui/button';
 import hrvProjectImg from '@/assets/hrv-project.png';
 import cyberProjectImg from '@/assets/cyber-project.png';
@@ -73,21 +74,23 @@ const Projects = () => {
     <section id="projects" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Featured Work</p>
-          <h2 className="section-heading">My <span className="gradient-text">Projects</span></h2>
-          <p className="section-subheading mx-auto">
-            A showcase of AI/ML projects demonstrating practical problem-solving skills.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Featured Work</p>
+            <h2 className="section-heading">My <span className="gradient-text">Projects</span></h2>
+            <p className="section-subheading mx-auto">
+              A showcase of AI/ML projects demonstrating practical problem-solving skills.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {projects
             .filter((p) => p.featured)
             .map((project) => (
+              <ScrollReveal key={project.title} delay={0.1}>
               <div
-                key={project.title}
                 className="glass-card p-8 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
               >
                 {project.image && (
@@ -172,6 +175,7 @@ const Projects = () => {
                   </Button>
                 </div>
               </div>
+              </ScrollReveal>
             ))}
         </div>
 
@@ -180,8 +184,8 @@ const Projects = () => {
           {projects
             .filter((p) => !p.featured)
             .map((project) => (
+              <ScrollReveal key={project.title} delay={0.05}>
               <div
-                key={project.title}
                 className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -206,6 +210,7 @@ const Projects = () => {
                   View Code
                 </a>
               </div>
+              </ScrollReveal>
             ))}
         </div>
       </div>
