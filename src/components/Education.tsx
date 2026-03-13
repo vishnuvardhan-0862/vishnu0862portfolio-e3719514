@@ -1,4 +1,5 @@
 import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 const Education = () => {
   return <section id="education" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
