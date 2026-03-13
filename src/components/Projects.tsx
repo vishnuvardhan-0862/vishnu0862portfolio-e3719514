@@ -184,8 +184,8 @@ const Projects = () => {
           {projects
             .filter((p) => !p.featured)
             .map((project) => (
+              <ScrollReveal key={project.title} delay={0.05}>
               <div
-                key={project.title}
                 className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
