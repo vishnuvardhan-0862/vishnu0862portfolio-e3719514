@@ -1,4 +1,5 @@
 import { Award, BookOpen, Cpu, Globe, Shield, Users, Bot, ExternalLink } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const certifications = [
   {
