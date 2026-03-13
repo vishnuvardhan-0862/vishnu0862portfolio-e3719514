@@ -15,6 +15,7 @@ const Education = () => {
         </ScrollReveal>
 
         {/* Education Card */}
+        <ScrollReveal delay={0.15}>
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 relative overflow-hidden group hover:border-primary/50 transition-all duration-300">
             {/* Decorative Element */}
