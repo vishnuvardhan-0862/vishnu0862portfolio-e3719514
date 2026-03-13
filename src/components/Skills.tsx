@@ -29,13 +29,15 @@ const Skills = () => {
     <section id="skills" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Technical Expertise</p>
-          <h2 className="section-heading">My <span className="gradient-text">Skills</span></h2>
-          <p className="section-subheading mx-auto">
-            A comprehensive toolkit for building intelligent systems and data-driven solutions.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Technical Expertise</p>
+            <h2 className="section-heading">My <span className="gradient-text">Skills</span></h2>
+            <p className="section-subheading mx-auto">
+              A comprehensive toolkit for building intelligent systems and data-driven solutions.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
