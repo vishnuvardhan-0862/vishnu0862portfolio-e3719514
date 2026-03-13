@@ -101,13 +101,15 @@ const Contact = () => {
     <section id="contact" className="py-12 lg:py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Get In Touch</p>
-          <h2 className="section-heading">Contact <span className="gradient-text">Me</span></h2>
-          <p className="section-subheading mx-auto">
-            Have a project in mind or want to connect? Feel free to reach out!
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Get In Touch</p>
+            <h2 className="section-heading">Contact <span className="gradient-text">Me</span></h2>
+            <p className="section-subheading mx-auto">
+              Have a project in mind or want to connect? Feel free to reach out!
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Info */}
