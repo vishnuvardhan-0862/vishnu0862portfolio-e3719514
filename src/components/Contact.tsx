@@ -165,7 +165,9 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="right" delay={0.2}>
           {/* Contact Form */}
           <div className="glass-card p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
