@@ -175,6 +175,7 @@ const Projects = () => {
                   </Button>
                 </div>
               </div>
+              </ScrollReveal>
             ))}
         </div>
 
