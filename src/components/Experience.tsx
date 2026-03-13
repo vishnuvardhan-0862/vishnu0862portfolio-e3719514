@@ -1,4 +1,5 @@
 import { Briefcase, Calendar, Building } from 'lucide-react';
+import ScrollReveal from './ScrollReveal';
 
 const experiences = [
   {
