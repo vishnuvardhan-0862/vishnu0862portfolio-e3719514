@@ -42,8 +42,8 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
+            <ScrollReveal key={category.title} delay={index * 0.1}>
             <div
-              key={category.title}
               className="glass-card p-8 hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
