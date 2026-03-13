@@ -53,8 +53,8 @@ const Experience = () => {
           <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
 
           {experiences.map((exp, index) => (
+            <ScrollReveal key={exp.title + exp.company} delay={index * 0.15}>
             <div
-              key={exp.title + exp.company}
               className="relative pl-16 mb-8 last:mb-0"
             >
               {/* Timeline Dot */}
