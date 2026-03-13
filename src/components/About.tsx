@@ -34,6 +34,7 @@ const About = () => {
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <ScrollReveal direction="left">
           {/* About Text */}
           <div className="space-y-5">
             <p className="text-muted-foreground leading-relaxed">I am a final-year <span className="text-foreground font-medium">B.Tech Computer Science</span> student specializing in <span className="text-primary font-medium">Artificial Intelligence and Machine Learning</span> at Malla Reddy Institute of Engineering and Technology, Hyderabad.</p>
