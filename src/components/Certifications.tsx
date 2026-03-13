@@ -51,13 +51,15 @@ const Certifications = () => {
     <section id="certifications" className="py-12 lg:py-20 relative bg-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">Continuous Learning</p>
-          <h2 className="section-heading">Certifications & <span className="gradient-text">Workshops</span></h2>
-          <p className="section-subheading mx-auto">
-            Credentials and learning experiences that demonstrate commitment to growth.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-primary font-medium mb-2">Continuous Learning</p>
+            <h2 className="section-heading">Certifications & <span className="gradient-text">Workshops</span></h2>
+            <p className="section-subheading mx-auto">
+              Credentials and learning experiences that demonstrate commitment to growth.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Certifications Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
