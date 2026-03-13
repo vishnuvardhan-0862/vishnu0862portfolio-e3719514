@@ -112,6 +112,7 @@ const Contact = () => {
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <ScrollReveal direction="left" delay={0.1}>
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-6">
