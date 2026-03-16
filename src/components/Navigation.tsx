@@ -57,9 +57,8 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-            <a href="https://www.linkedin.com/in/vishnuvardhan-komakula" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300" aria-label="LinkedIn">
-              <Linkedin size={16} />
-              <span className="hidden lg:inline">Komakula Vishnuvardhan</span>
+            <a href="https://www.linkedin.com/in/vishnuvardhan-komakula" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300" aria-label="LinkedIn">
+              <Linkedin size={18} />
             </a>
             <a href="https://github.com/vishnuvardhan-0862" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300" aria-label="GitHub">
               <Github size={18} />
