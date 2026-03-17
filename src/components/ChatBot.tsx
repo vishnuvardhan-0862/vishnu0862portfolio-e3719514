@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Loader2, Bot, User } from 'lucide-react';
+import { MessageCircle, X, Send, Loader2, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import profilePhoto from '@/assets/profile-photo.png';
 
 type Message = { role: 'user' | 'assistant'; content: string };
 
