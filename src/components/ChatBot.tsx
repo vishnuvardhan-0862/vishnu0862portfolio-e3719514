@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Loader2, Bot, User } from 'lucide-react';
+import { MessageCircle, X, Send, Loader2, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import profilePhoto from '@/assets/profile-photo.png';
 
 type Message = { role: 'user' | 'assistant'; content: string };
 
@@ -149,9 +150,7 @@ const ChatBot = () => {
           >
             {/* Header */}
             <div className="px-4 py-3 border-b border-border bg-primary/5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center">
-                <Bot className="w-5 h-5 text-primary" />
-              </div>
+              <img src={profilePhoto} alt="Vishnu" className="w-9 h-9 rounded-full object-cover" />
               <div>
                 <p className="font-semibold text-sm">Vishnu's AI Assistant</p>
                 <p className="text-xs text-muted-foreground">Ask me anything about Vishnu</p>
@@ -163,9 +162,7 @@ const ChatBot = () => {
               {messages.length === 0 && (
                 <div className="space-y-3">
                   <div className="flex gap-2 items-start">
-                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Bot className="w-4 h-4 text-primary" />
-                    </div>
+                    <img src={profilePhoto} alt="Vishnu" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
                     <div className="bg-secondary rounded-2xl rounded-tl-sm px-3 py-2 text-sm">
                       Hi! 👋 I'm Vishnu's AI assistant. Ask me about his skills, projects, or experience!
                     </div>
@@ -186,11 +183,13 @@ const ChatBot = () => {
 
               {messages.map((msg, i) => (
                 <div key={i} className={`flex gap-2 items-start ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
-                  <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                    msg.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-primary/10'
-                  }`}>
-                    {msg.role === 'user' ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4 text-primary" />}
-                  </div>
+                  {msg.role === 'user' ? (
+                    <div className="w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <User className="w-4 h-4" />
+                    </div>
+                  ) : (
+                    <img src={profilePhoto} alt="Vishnu" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
+                  )}
                   <div className={`max-w-[80%] rounded-2xl px-3 py-2 text-sm ${
                     msg.role === 'user'
                       ? 'bg-primary text-primary-foreground rounded-tr-sm'
@@ -207,9 +206,7 @@ const ChatBot = () => {
 
               {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
                 <div className="flex gap-2 items-start">
-                  <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Bot className="w-4 h-4 text-primary" />
-                  </div>
+                  <img src={profilePhoto} alt="Vishnu" className="w-7 h-7 rounded-full object-cover flex-shrink-0" />
                   <div className="bg-secondary rounded-2xl rounded-tl-sm px-3 py-2">
                     <Loader2 className="w-4 h-4 animate-spin text-muted-foreground" />
                   </div>
