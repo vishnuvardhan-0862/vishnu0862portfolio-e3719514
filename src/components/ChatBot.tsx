@@ -150,9 +150,7 @@ const ChatBot = () => {
           >
             {/* Header */}
             <div className="px-4 py-3 border-b border-border bg-primary/5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center">
-                <Bot className="w-5 h-5 text-primary" />
-              </div>
+              <img src={profilePhoto} alt="Vishnu" className="w-9 h-9 rounded-full object-cover" />
               <div>
                 <p className="font-semibold text-sm">Vishnu's AI Assistant</p>
                 <p className="text-xs text-muted-foreground">Ask me anything about Vishnu</p>
