@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import AnimatedBackground from '@/components/AnimatedBackground';
 import About from '@/components/About';
 import Education from '@/components/Education';
 import Skills from '@/components/Skills';
