@@ -162,9 +162,7 @@ const ChatBot = () => {
               {messages.length === 0 && (
                 <div className="space-y-3">
                   <div className="flex gap-2 items-start">
-                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Bot className="w-4 h-4 text-primary" />
-                    </div>
+                    <img src={profilePhoto} alt="Vishnu" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
                     <div className="bg-secondary rounded-2xl rounded-tl-sm px-3 py-2 text-sm">
                       Hi! 👋 I'm Vishnu's AI assistant. Ask me about his skills, projects, or experience!
                     </div>
