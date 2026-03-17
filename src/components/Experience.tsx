@@ -34,7 +34,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 lg:py-20 relative bg-secondary/30">
+    <section id="experience" className="py-12 lg:py-20 relative bg-background/60 backdrop-blur-sm">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <ScrollReveal>
