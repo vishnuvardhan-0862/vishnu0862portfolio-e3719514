@@ -39,8 +39,8 @@ const GradientOrb = ({
   transition,
 }: {
   className: string;
-  animateProps: Record<string, unknown>;
-  transition: Record<string, unknown>;
+  animateProps: any;
+  transition: any;
 }) => (
   <motion.div
     className={`absolute rounded-full blur-[120px] pointer-events-none ${className}`}
