@@ -9,12 +9,9 @@ import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ChatBot from '@/components/ChatBot';
-import AnimatedBackground from '@/components/AnimatedBackground';
-
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
-      <AnimatedBackground />
       <Navigation />
       <main>
         <Hero />
